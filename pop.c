@@ -2,7 +2,7 @@
 
 /**
  * pop - removes the top element off the stack
- * @head: head / top of the stack
+ * @head: top of the stack
  * @line_num: line number at which stack is empty
  */
 void pop(stack_t **head, unsigned int line_num)

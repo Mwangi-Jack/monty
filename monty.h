@@ -1,6 +1,6 @@
 #ifndef MAIN_H
 #define MAIN_H
-#define SIZE 50 /* Define the size of the stack*/
+#define SIZE 50 /* Stack size*/
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -10,12 +10,12 @@
 #include <string.h>
 #include <ctype.h>
 
-/* Global declaration of variables for testing */
+/* Global variable declaration*/
 
-extern int stack[SIZE]; /* Array implementation of stack*/
-extern int top; /* To insert and delete the data elements in the stack*/
-extern int i; /* To traverse the loop to while displaying the stack*/
-extern int choice; /* To choose either of the 3 stack operations*/
+extern int stack[SIZE];
+extern int top;
+extern int i;
+extern int choice;
 
 /* DATA STRUCTURES*/
 
@@ -49,7 +49,7 @@ typedef struct instruction_s
 	void (*f)(stack_t **stack, unsigned int line_number);
 } instruction_t;
 
-/* FUNCTION PROTOTYPES GOES HERE*/
+/* FUNCTION PROTOTYPES*/
 
 void file_error(char *file);
 int tokenize(char *line, char *instruction[]);

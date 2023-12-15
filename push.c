@@ -2,7 +2,7 @@
 
 /**
  * push - pushed an element to a stack
- * @head: head / top of stack
+ * @head: top of stack
  * @data: data to push to stack
  * @line_num: the line number
  */
@@ -34,5 +34,4 @@ void push(stack_t **head, unsigned int line_num, const char *data)
 		free_dll(head);
 		exit(EXIT_FAILURE);
 	}
-
 }

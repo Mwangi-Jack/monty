@@ -2,7 +2,7 @@
 
 /**
  * pint - prints value at the top of the stack
- * @head: head / top of the stack
+ * @head: top of the stack
  * @line_num: line number at stack is empty
  */
 void pint(stack_t **head, unsigned int line_num)
